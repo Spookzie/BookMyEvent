@@ -6,6 +6,7 @@
     <persistence-unit-metadata>
         <persistence-unit-defaults>
             <entity-listeners>
+                <!-- Using the AuditingEntityListener class from Spring Data JPA to enable automatic auditing -->
                 <entity-listener class="org.springframework.data.jpa.domain.support.AuditingEntityListener"/>
             </entity-listeners>
         </persistence-unit-defaults>
